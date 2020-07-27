@@ -11,6 +11,91 @@
         <link href="styles/main.css" rel="stylesheet">
     </head>
     <body>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title">Employee Survey Form</h1>
+        <p id="description">This form is designed to help improve the employee experience at XYZ</p>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">
+                    Name
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" name="name">
+            </div>
+            <div>
+                <label for="email" id="email-label">
+                    Email
+                </label>
+                <input type="email" id="email" placeholder="Enter your email" name="email">
+            </div>
+            <div>
+                <label for="number" id="number-label">
+                    Age
+                </label>
+                <input type="number" id="number" min="10" max="100" placeholder="Enter your age" name="age">
+            </div>
+            <div>
+                <label for="dropdown">
+                    Which role best describes you?
+                </label>
+                <select id="dropdown" name="role">
+                    <option disabled selected>Select current role</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="management">Management</option>
+                    <option value="executive">Executive</option>
+                    <option value="intern">Intern</option>
+                    <option value="support">Support staff</option>
+                </select>
+            </div>
+            <div>
+                <p>
+                    Are you satisfied with your current role?
+                </p>
+                
+                <label for="definitely"><input value="definitely" type="radio" id="definitely" name="satisfaction">
+                    Definitely
+                </label>
+                
+                <label for="maybe"><input value="maybe" type="radio" id="maybe" name="satisfaction">
+                    Maybe
+                </label>
+                
+                <label for="not-sure"><input value="not-sure" type="radio" id="not-sure" name="satisfaction">
+                    Not sure
+                </label>
+            </div>
+            <div>
+                <p>
+                    What do you like about working at XYZ?(Check all that apply)
+                </p>
+
+                <label for="colleagues"><input value="colleagues" type="checkbox" id="colleagues" name="favourite">
+                    Good colleagues
+                </label>
+                
+                <label for="learning"><input value="learning" type="checkbox" id="learning" name="favourite">
+                    Opportunity for learning
+                </label>
+                
+                <label for="career"><input value="career" type="checkbox" id="career" name="favourite">
+                    Career advancement
+                </label>
+
+                <label for="culture"><input value="culture" type="checkbox" id="culture" name="favourite">
+                    Work culture
+                </label>
+            </div>
+            <div>
+                <p>
+                    Any comments or suggestions?
+                </p>
+
+                <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
     </body>
 </html>
