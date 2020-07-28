@@ -1,0 +1,125 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fdf7f1;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #141414;
+    font-family: Basic, sans-serif;
+}
+
+form {
+    text-align: left;
+    max-width: 40vw;
+    margin: 20px auto;
+    padding: 3vw;
+    border: 2.5px solid #617130;
+    border-radius: 1rem;
+}
+ 
+::placeholder {
+    font-family: Caviar Dreams;
+    color: #fdf7f1;
+}
+
+.form-control {
+    padding: 5px;
+    border: 1px solid #617130;
+    border-radius: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #617130;
+    color: #fdf7f1;
+}
+
+.radio-checkbox {
+    font-family: Caviar Dreams;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+}
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fdf7f1;
+    border: 1px solid #617130;
+}
+
+.radio-checkbox:hover input ~ .checkbox {
+    background-color: #ccc;
+}
+
+.radio-checkbox:hover input ~ .radio {
+    background-color: #ccc;
+}
+
+.radio-checkbox input:checked ~ .checkbox {
+    background-color: #617130;
+}
+
+.radio-checkbox input:checked ~ .radio {
+    background-color: #617130;
+}
+
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fdf7f1;
+    border: 1px solid #617130;
+    border-radius: 50%;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f4a544;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin: 0 auto 1rem;
+    padding: 0.5rem;
+}
+
+#comments {
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #617130;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    background-color: #617130;
+}
+
+#submit {
+    width: 100%;
+    border: 1px solid #617130;
+    border-radius: .5rem;
+    padding: 5px;
+}
+
+button {
+    color: #141414;
+}

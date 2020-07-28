@@ -7,36 +7,38 @@
             Survey Form
         </title>
 
+        <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Caviar-Dreams" rel="stylesheet" type="text/css">
         <link href="styles/reset.css" rel="stylesheet">
         <link href="styles/main.css" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title">Employee Survey Form</h1>
+        <h1 id="title">EMPLOYEE SURVEY FORM</h1>
         <p id="description">This form is designed to help improve the employee experience at XYZ</p>
         <form id="survey-form">
-            <div>
+            <div class="form-group">
                 <label for="name" id="name-label">
                     Name
-                </label>
-                <input type="text" id="name" placeholder="Enter your name" name="name">
+                </label><br>
+                <input class="form-control" required type="text" id="name" placeholder="Enter your name" name="name">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email" id="email-label">
                     Email
-                </label>
-                <input type="email" id="email" placeholder="Enter your email" name="email">
+                </label><br>
+                <input class="form-control" required type="email" id="email" placeholder="Enter your email" name="email">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="number" id="number-label">
                     Age
-                </label>
-                <input type="number" id="number" min="10" max="100" placeholder="Enter your age" name="age">
+                </label><br>
+                <input  class="form-control" type="number" id="number" min="10" max="100" placeholder="Enter your age" name="age">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="dropdown">
                     Which role best describes you?
-                </label>
-                <select id="dropdown" name="role">
+                </label><br>
+                <select  class="form-control" id="dropdown" name="role">
                     <option disabled selected>Select current role</option>
                     <option value="engineer">Engineer</option>
                     <option value="management">Management</option>
@@ -45,57 +47,64 @@
                     <option value="support">Support staff</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <p>
                     Are you satisfied with your current role?
                 </p>
-                
-                <label for="definitely"><input value="definitely" type="radio" id="definitely" name="satisfaction">
+
+                <label class="radio-checkbox" for="definitely"><input value="definitely" type="radio" id="definitely" name="satisfaction">
+                    <span class="radio"></span>
                     Definitely
-                </label>
+                </label><br>
                 
-                <label for="maybe"><input value="maybe" type="radio" id="maybe" name="satisfaction">
+                <label class="radio-checkbox" for="maybe"><input value="maybe" type="radio" id="maybe" name="satisfaction">
+                    <span class="radio"></span>
                     Maybe
-                </label>
+                </label><br>
                 
-                <label for="not-sure"><input value="not-sure" type="radio" id="not-sure" name="satisfaction">
+                <label  class="radio-checkbox" for="not-sure"><input value="not-sure" type="radio" id="not-sure" name="satisfaction">
+                    <span class="radio"></span>
                     Not sure
                 </label>
             </div>
-            <div>
+            <div class="form-group">
                 <p>
                     What do you like about working at XYZ?(Check all that apply)
                 </p>
 
-                <label for="colleagues"><input value="colleagues" type="checkbox" id="colleagues" name="favourite">
+                <label class="radio-checkbox" for="colleagues"><input value="colleagues" type="checkbox" id="colleagues" name="favourite">
+                    <span class="checkbox"></span>
                     Good colleagues
-                </label>
+                </label><br>
                 
-                <label for="learning"><input value="learning" type="checkbox" id="learning" name="favourite">
+                <label class="radio-checkbox" for="learning"><input value="learning" type="checkbox" id="learning" name="favourite">
+                    <span class="checkbox"></span>
                     Opportunity for learning
-                </label>
+                </label><br>
                 
-                <label for="career"><input value="career" type="checkbox" id="career" name="favourite">
+                <label class="radio-checkbox" for="career"><input value="career" type="checkbox" id="career" name="favourite" >
+                    <span class="checkbox"></span>
                     Career advancement
-                </label>
+                </label><br>
 
-                <label for="culture"><input value="culture" type="checkbox" id="culture" name="favourite">
+                <label class="radio-checkbox" for="culture"><input value="culture" type="checkbox" id="culture" name="favourite">
+                    <span class="checkbox"></span>
                     Work culture
                 </label>
             </div>
-            <div>
+            <div class="form-group">
                 <p>
                     Any comments or suggestions?
                 </p>
 
                 <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <button id="submit" type="submit">
                     Submit
                 </button>
             </div>
         </form>
-        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
