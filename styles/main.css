@@ -13,13 +13,18 @@ body {
 
 form {
     text-align: left;
-    max-width: 40vw;
+    width: 90%;
     margin: 20px auto;
     padding: 3vw;
     border: 2.5px solid #617130;
     border-radius: 1rem;
 }
- 
+
+@media (min-width: 550px){
+    form {
+        max-width: 520px;
+    }
+}
 ::placeholder {
     font-family: Caviar Dreams;
     color: #fdf7f1;
