@@ -30,7 +30,13 @@ form {
     color: #fdf7f1;
 }
 
+label {
+    display: block;
+}
+
 .form-control {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
     border: 1px solid #617130;
     border-radius: .5rem;
@@ -49,7 +55,7 @@ form {
 
 .checkbox {
     position: absolute;
-    top: 0;
+    top: 4.5px;
     left: 0;
     height: 15px;
     width: 15px;
@@ -73,9 +79,17 @@ form {
     background-color: #617130;
 }
 
+.radio-checkbox input:focus ~ .checkbox {
+    box-shadow: 0 0 2px 3px #141414;
+}
+
+.radio-checkbox input:focus ~ .radio {
+    box-shadow: 0 0 2px 3px #141414;
+}
+
 .radio {
     position: absolute;
-    top: 0;
+    top: 4.5px;
     left: 0;
     height: 15px;
     width: 15px;
@@ -119,6 +133,11 @@ h1 {
     color: #fdf7f1;
 }
 
+#comments:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 3px #141414;
+}
+
 #submit {
     width: 100%;
     border: 1px solid #617130;
@@ -128,4 +147,23 @@ h1 {
 
 button {
     color: #141414;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 3px #141414;
+}
+
+input:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 3px #141414;
+}
+
+select:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 3px #141414;
 }
